@@ -11,7 +11,8 @@ return {
             require("mason-lspconfig").setup({
                 -- List of LSPs: https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file#available-lsp-servers
                 ensure_installed = {
-                    "lua_ls"
+                    "lua_ls",
+                    "ts_ls",
                 }
             })
         end
@@ -21,6 +22,7 @@ return {
         config = function()
             local lspconfig = require("lspconfig")
             lspconfig.lua_ls.setup({})
+            lspconfig.ts_ls.setup({})
 
             -- `:help vim.lsp.buf` for the list of lspconfig commands
 
