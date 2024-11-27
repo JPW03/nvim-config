@@ -18,7 +18,7 @@ return {
                     null_ls.builtins.diagnostics.golangci_lint,
                     null_ls.builtins.formatting.goimports,
                     -- Python
-                    null_ls.builtins.diagnostics.flake8,
+                    null_ls.builtins.diagnostics.ruff,
                     null_ls.builtins.formatting.black,
                 },
             })
