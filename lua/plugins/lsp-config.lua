@@ -13,6 +13,9 @@ return {
                 ensure_installed = {
                     "lua_ls",
                     "ts_ls",
+                    "eslint",
+                    "gopls",
+                    "pyright"
                 }
             })
         end
@@ -23,8 +26,12 @@ return {
             local lspconfig = require("lspconfig")
             lspconfig.lua_ls.setup({})
             lspconfig.ts_ls.setup({})
+            lspconfig.eslint.setup({})
+            lspconfig.gopls.setup({})
+            lspconfig.pyright.setup({})
 
             -- `:help vim.lsp.buf` for the list of lspconfig commands
+            -- Keymaps inspired by https://github.com/neovim/nvim-lspconfig/blob/01b25ff1a66745d29ff75952e9f605e45611746e/README.md#suggested-configuration
 
             -- Navigation
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
