@@ -15,7 +15,8 @@ return {
                     "ts_ls",
                     "eslint",
                     "gopls",
-                    "pyright"
+                    "pyright",
+                    "ruff",
                 }
             })
         end
@@ -23,12 +24,30 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
+            local capabilities = require("cmp_nvim_lsp").default_capabilities()
             local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({})
-            lspconfig.ts_ls.setup({})
-            lspconfig.eslint.setup({})
-            lspconfig.gopls.setup({})
-            lspconfig.pyright.setup({})
+            -- Lua
+            lspconfig.lua_ls.setup({
+                capabilities = capabilities
+            })
+            -- Typescript/Javascript
+            lspconfig.ts_ls.setup({
+                capabilities = capabilities
+            })
+            lspconfig.eslint.setup({
+                capabilities = capabilities
+            })
+            -- Go
+            lspconfig.gopls.setup({
+                capabilities = capabilities
+            })
+            -- Python
+            lspconfig.pyright.setup({
+                capabiltiies = capabilities
+            }) -- See https://github.com/microsoft/pyright/blob/main/docs/configuration.md for pyright project setup
+            lspconfig.ruff.setup({
+                capabilities = capabilities
+            })
 
             -- `:help vim.lsp.buf` for the list of lspconfig commands
             -- Keymaps inspired by https://github.com/neovim/nvim-lspconfig/blob/01b25ff1a66745d29ff75952e9f605e45611746e/README.md#suggested-configuration
