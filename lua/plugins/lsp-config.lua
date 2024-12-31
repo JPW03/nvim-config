@@ -17,6 +17,7 @@ return {
                     "gopls",
                     "pyright",
                     "ruff",
+                    "clangd",
                 }
             })
         end
@@ -46,6 +47,10 @@ return {
                 capabiltiies = capabilities
             }) -- See https://github.com/microsoft/pyright/blob/main/docs/configuration.md for pyright project setup
             lspconfig.ruff.setup({
+                capabilities = capabilities
+            })
+            -- C++
+            lspconfig.clangd.setup({
                 capabilities = capabilities
             })
 

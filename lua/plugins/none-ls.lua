@@ -19,6 +19,8 @@ return {
                     null_ls.builtins.formatting.goimports,
                     -- Python
                     null_ls.builtins.formatting.black,
+                    -- C++
+                    -- null_ls.builtins.formatting.clang_format -- Not happy with this formatter. Don't know how to config it
                 },
             })
 

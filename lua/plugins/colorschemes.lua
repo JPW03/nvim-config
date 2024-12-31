@@ -31,4 +31,7 @@ return {
 			-- vim.cmd.colorscheme("cyberdream")
 		end,
 	},
+    {
+        "EdenEast/nightfox.nvim"
+    }
 }
