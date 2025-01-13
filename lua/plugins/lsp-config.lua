@@ -18,6 +18,7 @@ return {
                     "pyright",
                     "ruff",
                     "clangd",
+                    "kotlin_language_server",
                 }
             })
         end
@@ -51,6 +52,10 @@ return {
             })
             -- C++
             lspconfig.clangd.setup({
+                capabilities = capabilities
+            })
+            -- Kotlin
+            lspconfig.kotlin_language_server.setup({
                 capabilities = capabilities
             })
 
