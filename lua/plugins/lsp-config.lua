@@ -52,7 +52,13 @@ return {
             })
             -- C++
             lspconfig.clangd.setup({
-                capabilities = capabilities
+                capabilities = capabilities,
+                cmd = {
+                    "clangd",
+                    "--clang-tidy",
+                    "--enable-config", -- Enables user config file. See `clangd --help`
+                }
+                -- Note: this LSP will read the .clangd file in project root. See https://clangd.llvm.org/config
             })
             -- Kotlin
             lspconfig.kotlin_language_server.setup({
