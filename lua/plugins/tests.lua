@@ -1,3 +1,4 @@
+return {}
 --return {
 --	"nvim-neotest/neotest",
 --	dependencies = {
@@ -5,7 +6,7 @@
 --		"nvim-lua/plenary.nvim",
 --		"antoinemadec/FixCursorHold.nvim",
 --		"nvim-treesitter/nvim-treesitter",
---		-- Add specialised neotest plugins here
+--		-- Add specialised neotest plugins here (list: https://github.com/nvim-neotest/neotest)
 --		"alfaix/neotest-gtest", -- C++ GoogleTest
 --	},
 --    config = function ()
