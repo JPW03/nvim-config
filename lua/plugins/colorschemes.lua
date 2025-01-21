@@ -7,10 +7,9 @@ return {
 		config = function()
 			-- Optionally configure and load the colorscheme
 			-- directly inside the plugin declaration.
-			vim.g.everforest_background = 'hard'
+			vim.g.everforest_background = "hard"
 			vim.g.everforest_enable_italic = true
 			vim.cmd.colorscheme("everforest")
-            -- TODO this is the only colourscheme I've managed to get working with treesitter, although its not as green as I thought
 		end,
 	},
 	{
@@ -24,14 +23,11 @@ return {
 		end,
 	},
 	{
-		"scottmckendry/cyberdream.nvim",
+		"EdenEast/nightfox.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			-- vim.cmd.colorscheme("cyberdream")
+			--vim.cmd.colorscheme("nightfox")
 		end,
 	},
-    {
-        "EdenEast/nightfox.nvim"
-    }
 }

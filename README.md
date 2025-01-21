@@ -3,6 +3,8 @@ My personal nvim config, mostly based on [typecraft's "From 0 to IDE"](https://w
 
 Preferred nerd font: [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)
 
+Preferred terminal (all the NVim colour scheming works here): [WezTerm](https://wezfurlong.org/wezterm/index.html)
+
 Clone to:
 - Unix: `~/.config/nvim/`
 - Windows: `~/AppData/Local/nvim/`
