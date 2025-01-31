@@ -12,6 +12,8 @@ Go to:
 - Go to instance of (character) on line: Next = `f(character)`, Previous = `F(character)`
 - Move through paragraphs: `{` and `}`
 - Move through sentences: `(` and `)`
+- Next occurrance of this word: `*`
+- Previous occurrance of this word: `#`
 
 I want to indent a single line: `>`
 I want to indent multiple lines: `v` for visual mode -> select the text you want to indent -> `>`
@@ -23,3 +25,6 @@ Execute the macro: `@x` where `x` is some character
 I want to go back to the previous file: `<C-^>`
 
 I want to copy text to my system clipboard: `"+y` (" = preparing for register input, + = the register representing the clipboard, y = yank command)
+
+I want to replace a phrase from "this" to "that" across the whole file: `:%s/this/that/g`
+- Note that the `/g` enables multiple replacements per line instead of limited to 1 replacement per line
