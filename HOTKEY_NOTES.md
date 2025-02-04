@@ -14,6 +14,7 @@ Go to:
 - Move through sentences: `(` and `)`
 - Next occurrance of this word: `*`
 - Previous occurrance of this word: `#`
+- Go to the character before the Nth instance of (character): `Nt(character)`
 
 I want to indent a single line: `>`
 I want to indent multiple lines: `v` for visual mode -> select the text you want to indent -> `>`
@@ -28,3 +29,8 @@ I want to copy text to my system clipboard: `"+y` (" = preparing for register in
 
 I want to replace a phrase from "this" to "that" across the whole file: `:%s/this/that/g`
 - Note that the `/g` enables multiple replacements per line instead of limited to 1 replacement per line
+
+I want to paste something in INSERT mode from register N: `<C-R>N`
+
+I want to repeat the last change: `.`
+
