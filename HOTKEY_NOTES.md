@@ -17,6 +17,7 @@ Go to:
 - Go to the character before the Nth instance of (character): `Nt(character)`
 - Go to the occurrance of your previous search (`/search-term`): Next = `n`, Previous = `N`
     - Go to the Nth occurrance of your last search: `ggNn`
+- Matching closing/opening bracket to the bracket selected: `%`
 
 I want to indent a single line: `>`
 I want to indent multiple lines: `v` for visual mode -> select the text you want to indent -> `>`
